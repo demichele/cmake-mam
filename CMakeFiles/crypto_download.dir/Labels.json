@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/CMakeFiles/crypto_download"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/CMakeFiles/crypto_download.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/CMakeFiles/CMakeFiles/crypto_download-complete.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/external/mbedtls/src/crypto_download-stamp/CMakeFiles/crypto_download-install.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/external/mbedtls/src/crypto_download-stamp/CMakeFiles/crypto_download-mkdir.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/external/mbedtls/src/crypto_download-stamp/CMakeFiles/crypto_download-download.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/external/mbedtls/src/crypto_download-stamp/CMakeFiles/crypto_download-update.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/external/mbedtls/src/crypto_download-stamp/CMakeFiles/crypto_download-patch.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/external/mbedtls/src/crypto_download-stamp/CMakeFiles/crypto_download-configure.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/external/mbedtls/src/crypto_download-stamp/CMakeFiles/crypto_download-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"crypto_download"
+		],
+		"name" : "crypto_download"
+	}
+}

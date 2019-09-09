@@ -1,0 +1,3 @@
+repository='external project URL'
+module='https://github.com/ThrowTheSwitch/Unity/archive/v2.4.3.tar.gz'
+tag='SHA256=a8c5e384f511a03c603bbecc9edc24d2cb4a916998d51a29cf2e3a2896920d03'

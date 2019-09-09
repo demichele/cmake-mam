@@ -1,0 +1,13 @@
+# Target labels
+ ext_cjson
+# Source files and their labels
+/Users/joaquin/git/entangled-develop/cbuild/cclient/CMakeFiles/ext_cjson
+/Users/joaquin/git/entangled-develop/cbuild/cclient/CMakeFiles/ext_cjson.rule
+/Users/joaquin/git/entangled-develop/cbuild/cclient/CMakeFiles/ext_cjson-complete.rule
+/Users/joaquin/git/entangled-develop/cbuild/external/cjson/src/ext_cjson-stamp/ext_cjson-install.rule
+/Users/joaquin/git/entangled-develop/cbuild/external/cjson/src/ext_cjson-stamp/ext_cjson-mkdir.rule
+/Users/joaquin/git/entangled-develop/cbuild/external/cjson/src/ext_cjson-stamp/ext_cjson-download.rule
+/Users/joaquin/git/entangled-develop/cbuild/external/cjson/src/ext_cjson-stamp/ext_cjson-update.rule
+/Users/joaquin/git/entangled-develop/cbuild/external/cjson/src/ext_cjson-stamp/ext_cjson-patch.rule
+/Users/joaquin/git/entangled-develop/cbuild/external/cjson/src/ext_cjson-stamp/ext_cjson-configure.rule
+/Users/joaquin/git/entangled-develop/cbuild/external/cjson/src/ext_cjson-stamp/ext_cjson-build.rule

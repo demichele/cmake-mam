@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/cbuild/CMakeFiles/unity_download"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/cbuild/CMakeFiles/unity_download.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/cbuild/CMakeFiles/unity_download-complete.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/cbuild/external/unity/src/unity_download-stamp/unity_download-install.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/cbuild/external/unity/src/unity_download-stamp/unity_download-mkdir.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/cbuild/external/unity/src/unity_download-stamp/unity_download-download.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/cbuild/external/unity/src/unity_download-stamp/unity_download-update.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/cbuild/external/unity/src/unity_download-stamp/unity_download-patch.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/cbuild/external/unity/src/unity_download-stamp/unity_download-configure.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/cbuild/external/unity/src/unity_download-stamp/unity_download-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"unity_download"
+		],
+		"name" : "unity_download"
+	}
+}

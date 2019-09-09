@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/CMakeFiles/mbedtls_download"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/CMakeFiles/mbedtls_download.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/CMakeFiles/CMakeFiles/mbedtls_download-complete.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/external/mbedtls/src/mbedtls_download-stamp/CMakeFiles/mbedtls_download-install.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/external/mbedtls/src/mbedtls_download-stamp/CMakeFiles/mbedtls_download-mkdir.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/external/mbedtls/src/mbedtls_download-stamp/CMakeFiles/mbedtls_download-download.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/external/mbedtls/src/mbedtls_download-stamp/CMakeFiles/mbedtls_download-update.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/external/mbedtls/src/mbedtls_download-stamp/CMakeFiles/mbedtls_download-patch.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/external/mbedtls/src/mbedtls_download-stamp/CMakeFiles/mbedtls_download-configure.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/external/mbedtls/src/mbedtls_download-stamp/CMakeFiles/mbedtls_download-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"mbedtls_download"
+		],
+		"name" : "mbedtls_download"
+	}
+}

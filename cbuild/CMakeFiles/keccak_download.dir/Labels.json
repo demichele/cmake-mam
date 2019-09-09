@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/cbuild/CMakeFiles/keccak_download"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/cbuild/CMakeFiles/keccak_download.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/cbuild/CMakeFiles/keccak_download-complete.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/cbuild/external/keccak/src/keccak_download-stamp/keccak_download-install.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/cbuild/external/keccak/src/keccak_download-stamp/keccak_download-mkdir.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/cbuild/external/keccak/src/keccak_download-stamp/keccak_download-download.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/cbuild/external/keccak/src/keccak_download-stamp/keccak_download-update.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/cbuild/external/keccak/src/keccak_download-stamp/keccak_download-patch.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/cbuild/external/keccak/src/keccak_download-stamp/keccak_download-configure.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/cbuild/external/keccak/src/keccak_download-stamp/keccak_download-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"keccak_download"
+		],
+		"name" : "keccak_download"
+	}
+}

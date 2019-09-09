@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/cbuild/CMakeFiles/ext_uthash"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/cbuild/CMakeFiles/ext_uthash.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/cbuild/CMakeFiles/ext_uthash-complete.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/cbuild/external/uthash/src/ext_uthash-stamp/ext_uthash-install.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/cbuild/external/uthash/src/ext_uthash-stamp/ext_uthash-mkdir.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/cbuild/external/uthash/src/ext_uthash-stamp/ext_uthash-download.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/cbuild/external/uthash/src/ext_uthash-stamp/ext_uthash-update.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/cbuild/external/uthash/src/ext_uthash-stamp/ext_uthash-patch.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/cbuild/external/uthash/src/ext_uthash-stamp/ext_uthash-configure.rule"
+		},
+		{
+			"file" : "/Users/joaquin/git/entangled-develop/cbuild/external/uthash/src/ext_uthash-stamp/ext_uthash-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"ext_uthash"
+		],
+		"name" : "ext_uthash"
+	}
+}
