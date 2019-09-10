@@ -5,212 +5,8 @@ https://github.com/iotaledger/entangled
 Refer to the LICENSE file for licensing information
 ]]
 
-# external libraries
-#include(../cmake/cjson.cmake)
-#include(../cmake/http_parser.cmake)
-#include(../cmake/unity.cmake)
-
-if(${RPI_CROSS_COMPILATION})
-  set_property(TARGET cclient PROPERTY C_STANDARD 99)
-endif()
-
-set(UTILS_DIR ${ENTANGLED_DIR}/utils)
-set(COMMON_DIR ${ENTANGLED_DIR}/common)
-set(CCLIENT_DIR ${ENTANGLED_DIR}/cclient)
 set(MAM_DIR ${CMAKE_SOURCE_DIR}/mam)
-set(HASH_CONTAINERS_DIR ${COMPONENT_PATH}/${UTILS_DIR}/containers/hash)
 
-set(COMPONENT_PRIV_INCLUDEDIRS ${ENTANGLED_DIR})
-# common/errors
-set(COMMON_ERROR
-    ${COMMON_DIR}/errors.c
-)
-# utils
-set(UTILS
-    ${UTILS_DIR}/time.c
-    ${UTILS_DIR}/logger_helper.c
-    ${UTILS_DIR}/handles/socket.c
-    ${UTILS_DIR}/char_buffer.c
-    ${UTILS_DIR}/memset_safe.c
-)
-# trinary
-set(COMMON_TRINARY
-    ${COMMON_DIR}/trinary/add.c
-    ${COMMON_DIR}/trinary/flex_trit.c
-    ${COMMON_DIR}/trinary/ptrit_incr.c
-    ${COMMON_DIR}/trinary/trit_array.c
-    ${COMMON_DIR}/trinary/trit_byte.c
-    ${COMMON_DIR}/trinary/trit_long.c
-    ${COMMON_DIR}/trinary/trit_ptrit.c
-    ${COMMON_DIR}/trinary/trit_tryte.c
-    ${COMMON_DIR}/trinary/tryte_ascii.c
-    ${COMMON_DIR}/trinary/tryte_long.c
-)
-#http client
-set(HTTP_CLIENT
-    ${CCLIENT_DIR}/http/http.c
-    ${CCLIENT_DIR}/service.c
-)
-#hash container
-set(HASH_CONTAINERS
-    ${HASH_CONTAINERS_DIR}/hash_array.c
-    ${HASH_CONTAINERS_DIR}/hash27_queue.c
-    ${HASH_CONTAINERS_DIR}/hash81_queue.c
-    ${HASH_CONTAINERS_DIR}/hash243_queue.c
-    ${HASH_CONTAINERS_DIR}/hash6561_queue.c
-    ${HASH_CONTAINERS_DIR}/hash8019_queue.c
-    ${HASH_CONTAINERS_DIR}/hash27_stack.c
-    ${HASH_CONTAINERS_DIR}/hash81_stack.c
-    ${HASH_CONTAINERS_DIR}/hash243_stack.c
-    ${HASH_CONTAINERS_DIR}/hash6561_stack.c
-    ${HASH_CONTAINERS_DIR}/hash8019_stack.c
-)
-# common curl
-set(COMMON_CURL
-    ${COMMON_DIR}/crypto/curl-p/const.c
-    ${COMMON_DIR}/crypto/curl-p/curl_p.c
-    ${COMMON_DIR}/crypto/curl-p/digest.c
-)
-set(COMMON_KERL
-    ${COMMON_DIR}/crypto/kerl/bigint.c
-    ${COMMON_DIR}/crypto/kerl/converter.c
-    ${COMMON_DIR}/crypto/kerl/kerl.c
-    ${COMMON_DIR}/crypto/kerl/hash.c
-)
-set(COMMON_HELPERS
-    ${COMMON_DIR}/helpers/checksum.c
-    ${COMMON_DIR}/helpers/digest.c
-    ${COMMON_DIR}/helpers/sign.c
-)
-set(COMMON_MODEL
-    ${COMMON_DIR}/model/bundle.c
-    ${COMMON_DIR}/model/transaction.c
-    ${COMMON_DIR}/model/transfer.c
-)
-set(COMMON_SIGN
-    ${COMMON_DIR}/crypto/iss/v1/iss_curl.c
-    ${COMMON_DIR}/crypto/iss/v1/iss_kerl.c
-    ${COMMON_DIR}/crypto/iss/normalize.c
-)
-
-set(COMMON_SRC
-    ${COMMON_ERROR}
-    ${COMMON_TRINARY}
-    ${COMMON_CURL}
-    ${COMMON_KERL}
-    ${COMMON_HELPERS}
-    ${COMMON_MODEL}
-    ${COMMON_SIGN}
-)
-
-#json serialization
-set(JSON_SERIALIZER_JSON_DIR ${CCLIENT_DIR}/serialization/json)
-set(JSON_SERIALIZER_JSON
-    ${JSON_SERIALIZER_JSON_DIR}/add_neighbors.c
-    ${JSON_SERIALIZER_JSON_DIR}/attach_to_tangle.c
-    ${JSON_SERIALIZER_JSON_DIR}/broadcast_transactions.c
-    ${JSON_SERIALIZER_JSON_DIR}/check_consistency.c
-    ${JSON_SERIALIZER_JSON_DIR}/error.c
-    ${JSON_SERIALIZER_JSON_DIR}/find_transactions.c
-    ${JSON_SERIALIZER_JSON_DIR}/get_balances.c
-    ${JSON_SERIALIZER_JSON_DIR}/get_inclusion_states.c
-    ${JSON_SERIALIZER_JSON_DIR}/get_missing_transactions.c
-    ${JSON_SERIALIZER_JSON_DIR}/get_neighbors.c
-    ${JSON_SERIALIZER_JSON_DIR}/get_node_info.c
-    ${JSON_SERIALIZER_JSON_DIR}/get_tips.c
-    ${JSON_SERIALIZER_JSON_DIR}/get_transactions_to_approve.c
-    ${JSON_SERIALIZER_JSON_DIR}/get_trytes.c
-    ${JSON_SERIALIZER_JSON_DIR}/helpers.c
-    ${JSON_SERIALIZER_JSON_DIR}/json_serializer.c
-    ${JSON_SERIALIZER_JSON_DIR}/logger.c
-    ${JSON_SERIALIZER_JSON_DIR}/remove_neighbors.c
-    ${JSON_SERIALIZER_JSON_DIR}/store_transactions.c
-    ${JSON_SERIALIZER_JSON_DIR}/were_addresses_spent_from.c
-)
-#request
-set(API_REQUEST_DIR ${CCLIENT_DIR}/request)
-set(API_REQUEST
-    ${API_REQUEST_DIR}/add_neighbors.c
-    ${API_REQUEST_DIR}/attach_to_tangle.c
-    ${API_REQUEST_DIR}/broadcast_transactions.c
-    ${API_REQUEST_DIR}/check_consistency.c
-    ${API_REQUEST_DIR}/find_transactions.c
-    ${API_REQUEST_DIR}/get_balances.c
-    ${API_REQUEST_DIR}/get_inclusion_states.c
-    ${API_REQUEST_DIR}/get_transactions_to_approve.c
-    ${API_REQUEST_DIR}/get_trytes.c
-    ${API_REQUEST_DIR}/remove_neighbors.c
-    ${API_REQUEST_DIR}/store_transactions.c
-    ${API_REQUEST_DIR}/were_addresses_spent_from.c
-)
-set(API_RESPONSE_DIR ${CCLIENT_DIR}/response)
-set(API_RESPONSE
-    ${API_RESPONSE_DIR}/add_neighbors.c
-    ${API_RESPONSE_DIR}/attach_to_tangle.c
-    ${API_RESPONSE_DIR}/check_consistency.c
-    ${API_RESPONSE_DIR}/error.c
-    ${API_RESPONSE_DIR}/find_transactions.c
-    ${API_RESPONSE_DIR}/get_balances.c
-    ${API_RESPONSE_DIR}/get_inclusion_states.c
-    ${API_RESPONSE_DIR}/get_missing_transactions.c
-    ${API_RESPONSE_DIR}/get_neighbors.c
-    ${API_RESPONSE_DIR}/get_node_info.c
-    ${API_RESPONSE_DIR}/get_tips.c
-    ${API_RESPONSE_DIR}/get_transactions_to_approve.c
-    ${API_RESPONSE_DIR}/get_trytes.c
-    ${API_RESPONSE_DIR}/remove_neighbors.c
-    ${API_RESPONSE_DIR}/were_addresses_spent_from.c
-)
-
-set(CCLIENT_API_CORE_DIR ${CCLIENT_DIR}/api/core)
-set(CCLIENT_CORE
-    ${CCLIENT_API_CORE_DIR}/get_inclusion_states.c
-    ${CCLIENT_API_CORE_DIR}/get_node_info.c
-    ${CCLIENT_API_CORE_DIR}/get_neighbors.c
-    ${CCLIENT_API_CORE_DIR}/core_init.c
-    ${CCLIENT_API_CORE_DIR}/get_transactions_to_approve.c
-    ${CCLIENT_API_CORE_DIR}/find_transactions.c
-    ${CCLIENT_API_CORE_DIR}/logger.c
-    ${CCLIENT_API_CORE_DIR}/attach_to_tangle.c
-    ${CCLIENT_API_CORE_DIR}/store_transactions.c
-    ${CCLIENT_API_CORE_DIR}/get_balances.c
-    ${CCLIENT_API_CORE_DIR}/remove_neighbors.c
-    ${CCLIENT_API_CORE_DIR}/add_neighbors.c
-    ${CCLIENT_API_CORE_DIR}/broadcast_transactions.c
-    ${CCLIENT_API_CORE_DIR}/check_consistency.c
-    ${CCLIENT_API_CORE_DIR}/get_tips.c
-    ${CCLIENT_API_CORE_DIR}/get_trytes.c
-    ${CCLIENT_API_CORE_DIR}/were_addresses_spent_from.c
-)
-set(CCLIENT_API_EXTENDED_DIR ${CCLIENT_DIR}/api/extended)
-set(CCLIENT_EXTENDED
-    ${CCLIENT_API_EXTENDED_DIR}/send_transfer.c
-    ${CCLIENT_API_EXTENDED_DIR}/extended_init.c
-    ${CCLIENT_API_EXTENDED_DIR}/get_account_data.c
-    ${CCLIENT_API_EXTENDED_DIR}/broadcast_bundle.c
-    ${CCLIENT_API_EXTENDED_DIR}/get_new_address.c
-    ${CCLIENT_API_EXTENDED_DIR}/is_promotable.c
-    ${CCLIENT_API_EXTENDED_DIR}/send_trytes.c
-    ${CCLIENT_API_EXTENDED_DIR}/find_transaction_objects.c
-    ${CCLIENT_API_EXTENDED_DIR}/traverse_bundle.c
-    ${CCLIENT_API_EXTENDED_DIR}/logger.c
-    ${CCLIENT_API_EXTENDED_DIR}/replay_bundle.c
-    ${CCLIENT_API_EXTENDED_DIR}/store_and_broadcast.c
-    ${CCLIENT_API_EXTENDED_DIR}/get_inputs.c
-    ${CCLIENT_API_EXTENDED_DIR}/prepare_transfers.c
-    ${CCLIENT_API_EXTENDED_DIR}/get_latest_inclusion.c
-    ${CCLIENT_API_EXTENDED_DIR}/get_bundle.c
-    ${CCLIENT_API_EXTENDED_DIR}/promote_transaction.c
-    ${CCLIENT_API_EXTENDED_DIR}/get_transaction_objects.c
-)
-# cclient
-set(CCLIENT
-    ${JSON_SERIALIZER_JSON}
-    ${API_REQUEST}
-    ${API_RESPONSE}
-    ${CCLIENT_CORE}
-    ${CCLIENT_EXTENDED}
-)
 #==============mam source=====================
 # mam-api
 set(MAM_API_DIR ${MAM_DIR}/api)
@@ -317,7 +113,7 @@ set(MAM
     ${MAM_API}
     ${MAM_EXAMPLES}
     ${MAM_MAM}
-    ${MAM_MSS}
+#    ${MAM_MSS}
     ${MAM_NTRU}
     ${MAM_PB3}
     ${MAM_PRNG}
@@ -332,10 +128,10 @@ set(MAM
 
 #==============end of mam source=====================
 
-# libcclient
-add_library(mamLib
-  ${MAM}
-)
+## libmam
+#add_library(mamLib
+#  ${MAM}
+#)
 
 set(COMPONENT_ADD_INCLUDEDIRS ${CMAKE_CURRENT_LIST_DIR}/${ENTANGLED_DIR})
 # local components
@@ -352,12 +148,6 @@ set(COMPONENT_PRIV_REQUIRES
     json
 )
 
-#register_component()
-
-# CClient debug
-if(CONFIG_CCLIENT_DEBUG)
-    add_definitions(-DDEBUG)
-endif()
 
 # flex_trit encoding
 if(CONFIG_ONE_TRIT_PER_BYTE)
@@ -383,39 +173,39 @@ link_directories("${CMAKE_INSTALL_PREFIX}/lib")
 include_directories(
   "${CMAKE_INSTALL_PREFIX}/include"
   "${PROJECT_SOURCE_DIR}"
-)
-add_library(
-      api
-      api/api.h
-      api/api.c
-)
-add_library(
-      send-common
-      examples/send-common.h
-      examples/send-common.c
+#  "${MAM}"
 )
 
+#link_directories(
+#  "${MAM}"
+#)
+
+add_library(libmam
+  ${MAM}
+)
+
+
+install(TARGETS libmam DESTINATION "${CMAKE_INSTALL_PREFIX}/lib")
+install(DIRECTORY "${PROJECT_SOURCE_DIR}/libmam/" DESTINATION
+"${CMAKE_INSTALL_PREFIX}/include/entangled/libmam" FILES_MATCHING PATTERN "*.h")
 
 
 add_executable(send-msg examples/send-msg.c)
+
+#if(${RPI_CROSS_COMPILATION})
+#  set_property(TARGET send-msg PROPERTY C_STANDARD 99)
+#endif()
+
+target_include_directories(send-msg PRIVATE ${PROJECT_SOURCE_DIR}/libmam "${CMAKE_INSTALL_PREFIX}/include/entangled/libmam")
+
+add_dependencies(send-msg
+  libmam
+)
+
 target_link_libraries(send-msg PUBLIC
+  libmam
   common
   ${EXTERNAL_LINK_LIBS}
   ${EXT_LIB_UNITY}
   Threads::Threads
 )
-target_link_libraries(send-msg PUBLIC
-  common
-  ${EXTERNAL_LINK_LIBS}
-  ${EXT_LIB_UNITY}
-  Threads::Threads
-)
-target_link_libraries(send-msg PUBLIC send-common)
-target_link_libraries(send-msg PUBLIC common)
-target_link_libraries(send-msg PUBLIC api)
-target_link_libraries(send-msg PUBLIC "${EXTERNAL_LINK_LIBS}")
-#target_link_libraries(send-msg PUBLIC lotoflibs)
-
-
-install(TARGETS send-msg DESTINATION "${CMAKE_INSTALL_PREFIX}/lib")
-install(DIRECTORY "${PROJECT_SOURCE_DIR}/send-msg/" DESTINATION "${CMAKE_INSTALL_PREFIX}/include/entangled/cclient" FILES_MATCHING PATTERN "*.h")

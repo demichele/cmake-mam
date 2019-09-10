@@ -23,8 +23,8 @@ set(THREADS_PREFER_PTHREAD_FLAG ON)
 find_package(Threads REQUIRED)
 
 # default CLI options
-option(CCLIENT "Enable CClient library" ON)
-option(CCLIENT_TEST "Enable CClient library test cases" ON)
+option(CCLIENT "Enable CClient library" FALSE)
+option(CCLIENT_TEST "Enable CClient library test cases" FALSE)
 
 include(ExternalProject)
 
@@ -59,7 +59,7 @@ include(cmake/uthash.cmake)
 
 # subdirs
 if(${CCLIENT})
-add_subdirectory(cclient)
+#add_subdirectory(cclient)
 endif()
 
 #if(${MAM})
