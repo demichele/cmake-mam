@@ -43,7 +43,8 @@ set(MAM_MSS_DIR ${MAM_DIR}/mss)
 set(MAM_MSS
     ${MAM_MSS_DIR}/mss_classic.c
     ${MAM_MSS_DIR}/mss_common.c
-    ${MAM_MSS_DIR}/mss_traversal.c
+#    ${MAM_MSS_DIR}/mss_traversal.c
+    ${MAM_MSS_DIR}/mss.h
 )
 
 # mam-ntru
@@ -113,7 +114,7 @@ set(MAM
     ${MAM_API}
     ${MAM_EXAMPLES}
     ${MAM_MAM}
-#    ${MAM_MSS}
+    ${MAM_MSS}
     ${MAM_NTRU}
     ${MAM_PB3}
     ${MAM_PRNG}
