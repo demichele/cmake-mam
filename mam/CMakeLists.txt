@@ -6,6 +6,9 @@ Refer to the LICENSE file for licensing information
 ]]
 
 set(MAM_DIR ${CMAKE_SOURCE_DIR}/mam)
+#add_definitions(COMPILE_DEFINITIONS   "MAM_MSS_TRAVERSAL")
+#add_definitions(COMPILE_DEFINITIONS_<MAM_MSS_TRAVERSAL>)
+#SET(COMPILE_DEFINITIONS_<MAM_MSS_TRAVERSAL>)
 
 #==============mam source=====================
 # mam-api
@@ -41,9 +44,9 @@ set(MAM_MAM
 # mam-mss
 set(MAM_MSS_DIR ${MAM_DIR}/mss)
 set(MAM_MSS
-    ${MAM_MSS_DIR}/mss_classic.c
+#    ${MAM_MSS_DIR}/mss_classic.c
     ${MAM_MSS_DIR}/mss_common.c
-#    ${MAM_MSS_DIR}/mss_traversal.c
+    ${MAM_MSS_DIR}/mss_traversal.c
     ${MAM_MSS_DIR}/mss.h
 )
 
@@ -184,7 +187,7 @@ include_directories(
 add_library(libmam
   ${MAM}
 )
-
+#target_compile_definitions(libmam PUBLIC <MAM_MSS_TRAVERSA>)
 
 install(TARGETS libmam DESTINATION "${CMAKE_INSTALL_PREFIX}/lib")
 install(DIRECTORY "${PROJECT_SOURCE_DIR}/libmam/" DESTINATION
@@ -196,6 +199,7 @@ add_executable(send-msg examples/send-msg.c)
 #if(${RPI_CROSS_COMPILATION})
 #  set_property(TARGET send-msg PROPERTY C_STANDARD 99)
 #endif()
+#SET(COMPILE_DEFINITIONS_<MAM_MSS_TRAVERSAL>)
 
 target_include_directories(send-msg PRIVATE ${PROJECT_SOURCE_DIR}/libmam "${CMAKE_INSTALL_PREFIX}/include/entangled/libmam")
 
