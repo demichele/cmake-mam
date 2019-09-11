@@ -19,10 +19,6 @@
 #ifndef __MAM_MSS_MSS_H__
 #define __MAM_MSS_MSS_H__
 
-#ifndef MAM_MSS_TRAVERSAL
-#define MAM_MSS_TRAVERSAL
-#endif
-
 #include "mam/mss/mss_common.h"
 
 #if defined(MAM_MSS_TRAVERSAL)
