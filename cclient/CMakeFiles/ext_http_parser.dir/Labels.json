@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/Users/joaquin/git/entangled-develop/cclient/CMakeFiles/ext_http_parser"
+			"file" : "/Users/joaquin/documents/GitHub/cmake-mam/cclient/CMakeFiles/ext_http_parser"
 		},
 		{
-			"file" : "/Users/joaquin/git/entangled-develop/cclient/CMakeFiles/ext_http_parser.rule"
+			"file" : "/Users/joaquin/documents/GitHub/cmake-mam/cclient/CMakeFiles/ext_http_parser.rule"
 		},
 		{
-			"file" : "/Users/joaquin/git/entangled-develop/cclient/CMakeFiles/CMakeFiles/ext_http_parser-complete.rule"
+			"file" : "/Users/joaquin/documents/GitHub/cmake-mam/cclient/CMakeFiles/CMakeFiles/ext_http_parser-complete.rule"
 		},
 		{
-			"file" : "/Users/joaquin/git/entangled-develop/external/http_parser/src/ext_http_parser-stamp/CMakeFiles/ext_http_parser-install.rule"
+			"file" : "/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/ext_http_parser-stamp/CMakeFiles/ext_http_parser-install.rule"
 		},
 		{
-			"file" : "/Users/joaquin/git/entangled-develop/external/http_parser/src/ext_http_parser-stamp/CMakeFiles/ext_http_parser-mkdir.rule"
+			"file" : "/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/ext_http_parser-stamp/CMakeFiles/ext_http_parser-mkdir.rule"
 		},
 		{
-			"file" : "/Users/joaquin/git/entangled-develop/external/http_parser/src/ext_http_parser-stamp/CMakeFiles/ext_http_parser-download.rule"
+			"file" : "/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/ext_http_parser-stamp/CMakeFiles/ext_http_parser-download.rule"
 		},
 		{
-			"file" : "/Users/joaquin/git/entangled-develop/external/http_parser/src/ext_http_parser-stamp/CMakeFiles/ext_http_parser-update.rule"
+			"file" : "/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/ext_http_parser-stamp/CMakeFiles/ext_http_parser-update.rule"
 		},
 		{
-			"file" : "/Users/joaquin/git/entangled-develop/external/http_parser/src/ext_http_parser-stamp/CMakeFiles/ext_http_parser-patch.rule"
+			"file" : "/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/ext_http_parser-stamp/CMakeFiles/ext_http_parser-patch.rule"
 		},
 		{
-			"file" : "/Users/joaquin/git/entangled-develop/external/http_parser/src/ext_http_parser-stamp/CMakeFiles/ext_http_parser-configure.rule"
+			"file" : "/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/ext_http_parser-stamp/CMakeFiles/ext_http_parser-configure.rule"
 		},
 		{
-			"file" : "/Users/joaquin/git/entangled-develop/external/http_parser/src/ext_http_parser-stamp/CMakeFiles/ext_http_parser-build.rule"
+			"file" : "/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/ext_http_parser-stamp/CMakeFiles/ext_http_parser-build.rule"
 		}
 	],
 	"target" : 

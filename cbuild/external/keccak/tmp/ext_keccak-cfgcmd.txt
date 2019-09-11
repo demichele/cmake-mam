@@ -1,1 +1,0 @@
-cmd='/Applications/CMake.app/Contents/bin/cmake;-DCMAKE_INSTALL_PREFIX:STRING=/Users/joaquin/git/entangled-develop/cbuild/install;-DCMAKE_TOOLCHAIN_FILE:STRING=;-GUnix Makefiles;<SOURCE_DIR><SOURCE_SUBDIR>'

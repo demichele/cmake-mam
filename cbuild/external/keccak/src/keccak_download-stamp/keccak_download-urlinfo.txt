@@ -1,3 +1,0 @@
-repository='external project URL'
-module='https://github.com/XKCP/XKCP/archive/87944d97ee18978aa0ea8486edbb7acb08a8564a.tar.gz'
-tag='SHA256=e6434f08d14ef46bce79d4c99e120430c843288003fe5d5d20dcbcb182b73c31'

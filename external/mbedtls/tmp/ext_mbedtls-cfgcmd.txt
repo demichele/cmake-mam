@@ -1,1 +1,0 @@
-cmd='/Applications/CMake.app/Contents/bin/cmake;-DENABLE_TESTING=Off;-DENABLE_PROGRAMS=Off;-DCMAKE_INSTALL_PREFIX:STRING=/Users/joaquin/git/entangled-develop/install;-DCMAKE_TOOLCHAIN_FILE:STRING=;-GXcode;<SOURCE_DIR><SOURCE_SUBDIR>'

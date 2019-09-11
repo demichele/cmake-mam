@@ -300,7 +300,7 @@ include_directories(
 )
 
 add_library(libmam ${MAM})
-target_link_libraries(libmam PUBLIC cclient)
+target_link_libraries(libmam PUBLIC cclient libcommon)
 
 install(TARGETS libmam DESTINATION "${CMAKE_INSTALL_PREFIX}/lib")
 install(DIRECTORY "${PROJECT_SOURCE_DIR}/libmam/" DESTINATION
@@ -308,17 +308,17 @@ install(DIRECTORY "${PROJECT_SOURCE_DIR}/libmam/" DESTINATION
 
 
 add_executable(send-msg examples/send-msg.c)
-target_include_directories(send-msg PUBLIC
-"${CMAKE_INSTALL_PREFIX}/lib"
-"${CMAKE_INSTALL_PREFIX}/include/entangled/common"
-"${CMAKE_INSTALL_PREFIX}/include/entangled/utils"
-"${PROJECT_BINARY_DIR}/external"
-"${PROJECT_BINARY_DIR}/download"
-"${PROJECT_BINARY_DIR}/install"
-"${PROJECT_BINARY_DIR}/install/bin"
-"${EXTERNAL_INSTALL_DIR}/include"
-${COMMON_SRC}
-)
+#target_include_directories(send-msg PUBLIC
+#"${CMAKE_INSTALL_PREFIX}/lib"
+#"${CMAKE_INSTALL_PREFIX}/include/entangled/common"
+#"${CMAKE_INSTALL_PREFIX}/include/entangled/utils"
+#"${PROJECT_BINARY_DIR}/external"
+#"${PROJECT_BINARY_DIR}/download"
+#"${PROJECT_BINARY_DIR}/install"
+#"${PROJECT_BINARY_DIR}/install/bin"
+#"${EXTERNAL_INSTALL_DIR}/include"
+#${COMMON_SRC}
+#)
 
 
 

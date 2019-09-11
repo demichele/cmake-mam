@@ -1,13 +1,13 @@
 # Target labels
  http_parser_download
 # Source files and their labels
-/Users/joaquin/git/entangled-develop/cclient/CMakeFiles/http_parser_download
-/Users/joaquin/git/entangled-develop/cclient/CMakeFiles/http_parser_download.rule
-/Users/joaquin/git/entangled-develop/cclient/CMakeFiles/CMakeFiles/http_parser_download-complete.rule
-/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/CMakeFiles/http_parser_download-install.rule
-/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/CMakeFiles/http_parser_download-mkdir.rule
-/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/CMakeFiles/http_parser_download-download.rule
-/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/CMakeFiles/http_parser_download-update.rule
-/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/CMakeFiles/http_parser_download-patch.rule
-/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/CMakeFiles/http_parser_download-configure.rule
-/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/CMakeFiles/http_parser_download-build.rule
+/Users/joaquin/documents/GitHub/cmake-mam/cclient/CMakeFiles/http_parser_download
+/Users/joaquin/documents/GitHub/cmake-mam/cclient/CMakeFiles/http_parser_download.rule
+/Users/joaquin/documents/GitHub/cmake-mam/cclient/CMakeFiles/CMakeFiles/http_parser_download-complete.rule
+/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/CMakeFiles/http_parser_download-install.rule
+/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/CMakeFiles/http_parser_download-mkdir.rule
+/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/CMakeFiles/http_parser_download-download.rule
+/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/CMakeFiles/http_parser_download-update.rule
+/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/CMakeFiles/http_parser_download-patch.rule
+/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/CMakeFiles/http_parser_download-configure.rule
+/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/CMakeFiles/http_parser_download-build.rule

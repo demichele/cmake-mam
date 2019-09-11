@@ -1,3 +1,0 @@
-repository='external project URL'
-module='https://github.com/embear/logger/archive/v4.0.x.tar.gz'
-tag='SHA256=af36b44bbc4aea3618962f68e24bc1efcc2c53d490b8b4a56463ea7afc910d67'

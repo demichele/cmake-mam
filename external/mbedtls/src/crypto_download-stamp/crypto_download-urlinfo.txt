@@ -1,3 +1,0 @@
-repository='external project URL'
-module='https://github.com/ARMmbed/mbed-crypto/archive/a78c958b17d75ddf63d8dd17255b6379dcbf259f.tar.gz'
-tag='SHA256=96538dde4fc400290b80651038f79079e910d7d29aece203a6378f885129f8cf'

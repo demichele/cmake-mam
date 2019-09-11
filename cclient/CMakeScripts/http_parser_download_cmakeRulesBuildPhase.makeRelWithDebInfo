@@ -2,78 +2,78 @@
 # Custom rules for http_parser_download
 .SUFFIXES: 
 all: \
-	/Users/joaquin/git/entangled-develop/cclient/CMakeFiles/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-complete\
-	/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-install\
-	/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-mkdir\
-	/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-download\
-	/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-update\
-	/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-patch\
-	/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-configure\
-	/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-build
+	/Users/joaquin/documents/GitHub/cmake-mam/cclient/CMakeFiles/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-complete\
+	/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-install\
+	/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-mkdir\
+	/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-download\
+	/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-update\
+	/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-patch\
+	/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-configure\
+	/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-build
 
 
-/Users/joaquin/git/entangled-develop/cclient/CMakeFiles/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-complete: \
-/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-install\
-/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-mkdir\
-/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-download\
-/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-update\
-/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-patch\
-/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-configure\
-/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-build\
-/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-install
+/Users/joaquin/documents/GitHub/cmake-mam/cclient/CMakeFiles/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-complete: \
+/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-install\
+/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-mkdir\
+/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-download\
+/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-update\
+/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-patch\
+/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-configure\
+/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-build\
+/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-install
 	echo "Completed 'http_parser_download'"
-	/Applications/CMake.app/Contents/bin/cmake -E make_directory /Users/joaquin/git/entangled-develop/cclient/CMakeFiles/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
-	/Applications/CMake.app/Contents/bin/cmake -E touch /Users/joaquin/git/entangled-develop/cclient/CMakeFiles/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-complete
-	/Applications/CMake.app/Contents/bin/cmake -E touch /Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-done
+	/Applications/CMake.app/Contents/bin/cmake -E make_directory /Users/joaquin/documents/GitHub/cmake-mam/cclient/CMakeFiles/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+	/Applications/CMake.app/Contents/bin/cmake -E touch /Users/joaquin/documents/GitHub/cmake-mam/cclient/CMakeFiles/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-complete
+	/Applications/CMake.app/Contents/bin/cmake -E touch /Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-done
 
-/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-install: \
-/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-build
+/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-install: \
+/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-build
 	echo "No install step for 'http_parser_download'"
-	cd /Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-build && /Applications/CMake.app/Contents/bin/cmake -E echo_append
-	cd /Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-build && /Applications/CMake.app/Contents/bin/cmake -E touch /Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-install
+	cd /Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-build && /Applications/CMake.app/Contents/bin/cmake -E echo_append
+	cd /Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-build && /Applications/CMake.app/Contents/bin/cmake -E touch /Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-install
 
-/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-mkdir: 
+/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-mkdir: 
 	echo "Creating directories for 'http_parser_download'"
-	/Applications/CMake.app/Contents/bin/cmake -E make_directory /Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download
-	/Applications/CMake.app/Contents/bin/cmake -E make_directory /Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-build
-	/Applications/CMake.app/Contents/bin/cmake -E make_directory /Users/joaquin/git/entangled-develop/external/http_parser
-	/Applications/CMake.app/Contents/bin/cmake -E make_directory /Users/joaquin/git/entangled-develop/external/http_parser/tmp
-	/Applications/CMake.app/Contents/bin/cmake -E make_directory /Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
-	/Applications/CMake.app/Contents/bin/cmake -E make_directory /Users/joaquin/git/entangled-develop/download
-	/Applications/CMake.app/Contents/bin/cmake -E make_directory /Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp
-	/Applications/CMake.app/Contents/bin/cmake -E touch /Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-mkdir
+	/Applications/CMake.app/Contents/bin/cmake -E make_directory /Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download
+	/Applications/CMake.app/Contents/bin/cmake -E make_directory /Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-build
+	/Applications/CMake.app/Contents/bin/cmake -E make_directory /Users/joaquin/documents/GitHub/cmake-mam/external/http_parser
+	/Applications/CMake.app/Contents/bin/cmake -E make_directory /Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/tmp
+	/Applications/CMake.app/Contents/bin/cmake -E make_directory /Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+	/Applications/CMake.app/Contents/bin/cmake -E make_directory /Users/joaquin/documents/GitHub/cmake-mam/download
+	/Applications/CMake.app/Contents/bin/cmake -E make_directory /Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp
+	/Applications/CMake.app/Contents/bin/cmake -E touch /Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-mkdir
 
-/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-download: \
-/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/http_parser_download-urlinfo.txt\
-/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-mkdir
+/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-download: \
+/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/http_parser_download-urlinfo.txt\
+/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-mkdir
 	echo "Performing download step (download, verify and extract) for 'http_parser_download'"
-	cd /Users/joaquin/git/entangled-develop/external/http_parser/src && /Applications/CMake.app/Contents/bin/cmake -P /Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/download-http_parser_download.cmake
-	cd /Users/joaquin/git/entangled-develop/external/http_parser/src && /Applications/CMake.app/Contents/bin/cmake -P /Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/verify-http_parser_download.cmake
-	cd /Users/joaquin/git/entangled-develop/external/http_parser/src && /Applications/CMake.app/Contents/bin/cmake -P /Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/extract-http_parser_download.cmake
-	cd /Users/joaquin/git/entangled-develop/external/http_parser/src && /Applications/CMake.app/Contents/bin/cmake -E touch /Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-download
+	cd /Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src && /Applications/CMake.app/Contents/bin/cmake -P /Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/download-http_parser_download.cmake
+	cd /Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src && /Applications/CMake.app/Contents/bin/cmake -P /Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/verify-http_parser_download.cmake
+	cd /Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src && /Applications/CMake.app/Contents/bin/cmake -P /Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/extract-http_parser_download.cmake
+	cd /Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src && /Applications/CMake.app/Contents/bin/cmake -E touch /Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-download
 
-/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-update: \
-/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-download
+/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-update: \
+/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-download
 	echo "No update step for 'http_parser_download'"
 	/Applications/CMake.app/Contents/bin/cmake -E echo_append
-	/Applications/CMake.app/Contents/bin/cmake -E touch /Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-update
+	/Applications/CMake.app/Contents/bin/cmake -E touch /Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-update
 
-/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-patch: \
-/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-download
+/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-patch: \
+/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-download
 	echo "No patch step for 'http_parser_download'"
 	/Applications/CMake.app/Contents/bin/cmake -E echo_append
-	/Applications/CMake.app/Contents/bin/cmake -E touch /Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-patch
+	/Applications/CMake.app/Contents/bin/cmake -E touch /Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-patch
 
-/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-configure: \
-/Users/joaquin/git/entangled-develop/external/http_parser/tmp/http_parser_download-cfgcmd.txt\
-/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-update\
-/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-patch
+/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-configure: \
+/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/tmp/http_parser_download-cfgcmd.txt\
+/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-update\
+/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-patch
 	echo "No configure step for 'http_parser_download'"
-	cd /Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-build && /Applications/CMake.app/Contents/bin/cmake -E echo_append
-	cd /Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-build && /Applications/CMake.app/Contents/bin/cmake -E touch /Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-configure
+	cd /Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-build && /Applications/CMake.app/Contents/bin/cmake -E echo_append
+	cd /Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-build && /Applications/CMake.app/Contents/bin/cmake -E touch /Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-configure
 
-/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-build: \
-/Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-configure
+/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-build: \
+/Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-configure
 	echo "No build step for 'http_parser_download'"
-	cd /Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-build && /Applications/CMake.app/Contents/bin/cmake -E echo_append
-	cd /Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-build && /Applications/CMake.app/Contents/bin/cmake -E touch /Users/joaquin/git/entangled-develop/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-build
+	cd /Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-build && /Applications/CMake.app/Contents/bin/cmake -E echo_append
+	cd /Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-build && /Applications/CMake.app/Contents/bin/cmake -E touch /Users/joaquin/documents/GitHub/cmake-mam/external/http_parser/src/http_parser_download-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/http_parser_download-build
