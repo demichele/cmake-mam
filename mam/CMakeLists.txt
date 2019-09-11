@@ -4,11 +4,128 @@ https://github.com/iotaledger/entangled
 
 Refer to the LICENSE file for licensing information
 ]]
-
+set(ENTANGLED_DIR ${CMAKE_SOURCE_DIR})
+set(UTILS_DIR ${CMAKE_SOURCE_DIR}/utils)
+set(COMMON_DIR ${CMAKE_SOURCE_DIR}/common)
 set(MAM_DIR ${CMAKE_SOURCE_DIR}/mam)
+
 #add_definitions(COMPILE_DEFINITIONS   "MAM_MSS_TRAVERSAL")
 #add_definitions(COMPILE_DEFINITIONS_<MAM_MSS_TRAVERSAL>)
 #SET(COMPILE_DEFINITIONS_<MAM_MSS_TRAVERSAL>)
+
+
+set(COMPONENT_PRIV_INCLUDEDIRS ${ENTANGLED_DIR})
+# common/errors
+set(COMMON_ERROR
+    ${COMMON_DIR}/errors.c
+)
+# utils
+set(UTILS
+    ${UTILS_DIR}/time.c
+    ${UTILS_DIR}/logger_helper.c
+    ${UTILS_DIR}/handles/socket.c
+    ${UTILS_DIR}/char_buffer.c
+    ${UTILS_DIR}/memset_safe.c
+)
+# trinary
+set(COMMON_TRINARY
+    ${COMMON_DIR}/trinary/add.c
+    ${COMMON_DIR}/trinary/flex_trit.c
+    ${COMMON_DIR}/trinary/ptrit_incr.c
+    ${COMMON_DIR}/trinary/trit_array.c
+    ${COMMON_DIR}/trinary/trit_byte.c
+    ${COMMON_DIR}/trinary/trit_long.c
+    ${COMMON_DIR}/trinary/trit_ptrit.c
+    ${COMMON_DIR}/trinary/trit_tryte.c
+    ${COMMON_DIR}/trinary/tryte_ascii.c
+    ${COMMON_DIR}/trinary/tryte_long.c
+)
+#http client
+set(HTTP_CLIENT
+    ${CCLIENT_DIR}/http/http.c
+    ${CCLIENT_DIR}/service.c
+)
+#hash container
+set(HASH_CONTAINERS
+    ${HASH_CONTAINERS_DIR}/hash_array.c
+    ${HASH_CONTAINERS_DIR}/hash27_queue.c
+    ${HASH_CONTAINERS_DIR}/hash81_queue.c
+    ${HASH_CONTAINERS_DIR}/hash243_queue.c
+    ${HASH_CONTAINERS_DIR}/hash6561_queue.c
+    ${HASH_CONTAINERS_DIR}/hash8019_queue.c
+    ${HASH_CONTAINERS_DIR}/hash27_stack.c
+    ${HASH_CONTAINERS_DIR}/hash81_stack.c
+    ${HASH_CONTAINERS_DIR}/hash243_stack.c
+    ${HASH_CONTAINERS_DIR}/hash6561_stack.c
+    ${HASH_CONTAINERS_DIR}/hash8019_stack.c
+)
+# common curl
+set(COMMON_CURL
+    ${COMMON_DIR}/crypto/curl-p/const.c
+    ${COMMON_DIR}/crypto/curl-p/curl_p.c
+    ${COMMON_DIR}/crypto/curl-p/digest.c
+)
+set(COMMON_KERL
+    ${COMMON_DIR}/crypto/kerl/bigint.c
+    ${COMMON_DIR}/crypto/kerl/converter.c
+    ${COMMON_DIR}/crypto/kerl/kerl.c
+    ${COMMON_DIR}/crypto/kerl/hash.c
+)
+set(COMMON_HELPERS
+    ${COMMON_DIR}/helpers/checksum.c
+    ${COMMON_DIR}/helpers/digest.c
+    ${COMMON_DIR}/helpers/sign.c
+)
+set(COMMON_MODEL
+    ${COMMON_DIR}/model/bundle.c
+    ${COMMON_DIR}/model/transaction.c
+    ${COMMON_DIR}/model/transfer.c
+)
+set(COMMON_SIGN
+    ${COMMON_DIR}/crypto/iss/v1/iss_curl.c
+    ${COMMON_DIR}/crypto/iss/v1/iss_kerl.c
+    ${COMMON_DIR}/crypto/iss/normalize.c
+)
+
+set(COMMON_CRYPTO
+    ${COMMON_DIR}/crypto/ftroika/ftroika.c
+    ${COMMON_DIR}/crypto/troika/troika.c
+    ${COMMON_DIR}/crypto/ftroika/ftroika.h
+    ${COMMON_DIR}/crypto/troika/troika.h
+)
+
+set(COMMON_SRC
+    ${COMMON_ERROR}
+    ${COMMON_TRINARY}
+    ${COMMON_CURL}
+    ${COMMON_KERL}
+    ${COMMON_HELPERS}
+    ${COMMON_MODEL}
+    ${COMMON_SIGN}
+    ${COMMON_CRYPTO}
+)
+
+add_library(libcommon
+  ${COMMON_SRC}
+)
+
+add_dependencies(libcommon
+  cclient
+  #common
+)
+
+target_link_libraries(libcommon PUBLIC
+  #cclient
+  #common
+  ${EXTERNAL_LINK_LIBS}
+  ${EXT_LIB_UNITY}
+  Threads::Threads
+)
+
+
+install(TARGETS libcommon DESTINATION "${CMAKE_INSTALL_PREFIX}/lib")
+install(DIRECTORY "${PROJECT_SOURCE_DIR}/libcommon/" DESTINATION
+"${CMAKE_INSTALL_PREFIX}/include/entangled/libcommon" FILES_MATCHING PATTERN "*.h")
 
 #==============mam source=====================
 # mam-api
@@ -104,6 +221,7 @@ set(MAM_TRITS
 set(MAM_TROIKA_DIR ${MAM_DIR}/troika)
 set(MAM_TROIKA
     ${MAM_TROIKA_DIR}/troika.c
+    ${MAM_TROIKA_DIR}/troika.h
 )
 
 # mam-wots
@@ -164,7 +282,7 @@ elseif(CONFIG_FIVE_TRIT_PER_BYTE)
     add_definitions(-DFLEX_TRIT_ENCODING_5_TRITS_PER_BYTE)
 endif()
 
-include(ExternalProject)
+#include(ExternalProject)
 
 #include(../cmake/embear_logger.cmake)
 #include(../cmake/keccak.cmake)
@@ -174,20 +292,15 @@ include(ExternalProject)
 
 link_directories("${CMAKE_INSTALL_PREFIX}/lib")
 
+
+
 include_directories(
   "${CMAKE_INSTALL_PREFIX}/include"
   "${PROJECT_SOURCE_DIR}"
-#  "${MAM}"
 )
 
-#link_directories(
-#  "${MAM}"
-#)
-
-add_library(libmam
-  ${MAM}
-)
-#target_compile_definitions(libmam PUBLIC <MAM_MSS_TRAVERSA>)
+add_library(libmam ${MAM})
+target_link_libraries(libmam PUBLIC cclient)
 
 install(TARGETS libmam DESTINATION "${CMAKE_INSTALL_PREFIX}/lib")
 install(DIRECTORY "${PROJECT_SOURCE_DIR}/libmam/" DESTINATION
@@ -195,22 +308,23 @@ install(DIRECTORY "${PROJECT_SOURCE_DIR}/libmam/" DESTINATION
 
 
 add_executable(send-msg examples/send-msg.c)
-
-#if(${RPI_CROSS_COMPILATION})
-#  set_property(TARGET send-msg PROPERTY C_STANDARD 99)
-#endif()
-#SET(COMPILE_DEFINITIONS_<MAM_MSS_TRAVERSAL>)
-
-target_include_directories(send-msg PRIVATE ${PROJECT_SOURCE_DIR}/libmam "${CMAKE_INSTALL_PREFIX}/include/entangled/libmam")
-
-add_dependencies(send-msg
-  libmam
+target_include_directories(send-msg PUBLIC
+"${CMAKE_INSTALL_PREFIX}/lib"
+"${CMAKE_INSTALL_PREFIX}/include/entangled/common"
+"${CMAKE_INSTALL_PREFIX}/include/entangled/utils"
+"${PROJECT_BINARY_DIR}/external"
+"${PROJECT_BINARY_DIR}/download"
+"${PROJECT_BINARY_DIR}/install"
+"${PROJECT_BINARY_DIR}/install/bin"
+"${EXTERNAL_INSTALL_DIR}/include"
+${COMMON_SRC}
 )
 
+
+
 target_link_libraries(send-msg PUBLIC
+  #common
+  libcommon
+  #cclient
   libmam
-  common
-  ${EXTERNAL_LINK_LIBS}
-  ${EXT_LIB_UNITY}
-  Threads::Threads
 )
