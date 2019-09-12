@@ -17,7 +17,6 @@ cc_library(
         "//ciri/consensus/tangle",
         "//common:errors",
         "//common/storage",
-        "//common/storage:test_utils",
         "//utils:files",
     ],
 )
@@ -31,7 +30,6 @@ cc_library(
         "//ciri/consensus/spent_addresses:spent_addresses_provider",
         "//common:errors",
         "//common/storage",
-        "//common/storage:test_utils",
         "//utils:files",
     ],
 )

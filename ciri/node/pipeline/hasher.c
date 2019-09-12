@@ -17,7 +17,7 @@
 #include "utils/logger_helper.h"
 
 #define HASHER_LOGGER_ID "hasher"
-#define HASHER_MAX PTRIT_SIZE
+#define HASHER_MAX 64
 
 static logger_id_t logger_id;
 

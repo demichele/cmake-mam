@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2019 IOTA Stiftung
+ * Copyright (c) 2018 IOTA Stiftung
  * https://github.com/iotaledger/entangled
  *
  * Refer to the LICENSE file for licensing information
@@ -15,7 +15,8 @@
 extern "C" {
 #endif
 
-PearlDiverStatus hamming(Curl *ctx, size_t begin, size_t end, intptr_t security);
+PearlDiverStatus hamming(Curl *const, unsigned short const offset, unsigned short const end,
+                         unsigned short const security);
 
 #ifdef __cplusplus
 }

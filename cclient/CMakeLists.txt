@@ -117,8 +117,8 @@ set(JSON_SERIALIZER_SRC
 
 #==============end of cclient source=====================
 
-# libcclient 
-add_library(cclient 
+# libcclient
+add_library(cclient
   service.c
   ${API_CORE_SRC}
   ${API_EXTENDED_SRC}
@@ -147,6 +147,7 @@ install(TARGETS cclient DESTINATION "${CMAKE_INSTALL_PREFIX}/lib")
 install(DIRECTORY "${PROJECT_SOURCE_DIR}/cclient/" DESTINATION "${CMAKE_INSTALL_PREFIX}/include/entangled/cclient" FILES_MATCHING PATTERN "*.h")
 
 if(${CCLIENT_TEST})
+#if(FALSE)
   # ==============API test cases================
   function(add_cclient_test test_src test_name)
     add_executable(${test_name} "api/tests/${test_src}" "api/tests/cclient_service_init.c")

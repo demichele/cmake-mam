@@ -34,13 +34,13 @@ static uint16_t const NODE_PORT = 443;
 
 void cclient_service_setup(iota_client_service_t *const service) {
   // init service
-  service->http.path = "/";
-  service->http.content_type = "application/json";
-  service->http.accept = "application/json";
-  service->http.host = NODE_HOST;
-  service->http.port = NODE_PORT;
-  service->http.api_version = 1;
-  service->serializer_type = SR_JSON;
+    service->http.path = "/";
+    service->http.content_type = "application/json";
+    service->http.accept = "application/json";
+    service->http.host = NODE_HOST;
+    service->http.port = NODE_PORT;
+    service->http.api_version = 1;
+    service->serializer_type = SR_JSON;
   service->http.ca_pem = amazon_ca1_pem;
 
   logger_helper_init(LOGGER_DEBUG);

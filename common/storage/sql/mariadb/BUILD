@@ -9,6 +9,7 @@ cc_library(
         "connection.h",
         "wrappers.h",
     ],
+    defines = ["STORAGE_MARIADB"],
     visibility = ["//visibility:public"],
     deps = [
         "//common/model:milestone",
@@ -30,14 +31,4 @@ filegroup(
     name = "spent-addresses-schema",
     srcs = ["spent-addresses-schema.sql"],
     visibility = ["//visibility:public"],
-)
-
-cc_library(
-    name = "test_utils_mariadb",
-    srcs = ["test_utils.c"],
-    visibility = ["//visibility:public"],
-    deps = [
-        ":storage_mariadb",
-        "//common/storage:test_utils_hdr",
-    ],
 )
