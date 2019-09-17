@@ -33,13 +33,13 @@ retcode_t mam_example_channel_create(mam_api_t *const api, tryte_t *const channe
     mam_channel_t *channel = &api->channels->value;
     trits_to_trytes(trits_begin(mam_channel_id(channel)), channel_id, NUM_TRITS_ADDRESS);
   }
-
-  fprintf(stderr, "Address: ");
+  printf("Adress: %s\n",channel_id);
+  /*fprintf(stderr, "\nAddress: ");
   for (size_t i = 0; i < FLEX_TRIT_SIZE_243; i++) {
     fprintf(stderr, "%c", channel_id[i]);
   }
   fprintf(stderr, "\n");
-
+*/
   return RC_OK;
 }
 
@@ -75,10 +75,14 @@ retcode_t send_bundle(char const *const host, uint16_t const port, bundle_transa
   }
 
   fprintf(stderr, "Bundle: ");
+  char bundlebuffer[ FLEX_TRIT_SIZE_243+1];
   for (size_t i = 0; i < FLEX_TRIT_SIZE_243; i++) {
+    bundlebuffer[i]=((iota_transaction_t *)utarray_front(bundle))->essence.bundle[i];
     fprintf(stderr, "%c", ((iota_transaction_t *)utarray_front(bundle))->essence.bundle[i]);
   }
-  fprintf(stderr, "\n");
+  bundlebuffer[FLEX_TRIT_SIZE_243]='\0';
+  printf("%s\n",bundlebuffer);
+  //fprintf(stderr, "Fin del bundle \n");
 
 done:
   hash_array_free(raw_trytes);

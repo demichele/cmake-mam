@@ -19,7 +19,9 @@
  */
 #ifndef __MAM_NTRU_POLY_H__
 #define __MAM_NTRU_POLY_H__
-
+#ifndef MAM_POLY_MRED_BINARY
+#define MAM_POLY_MRED_BINARY
+#endif
 #include "mam/defs.h"
 #include "mam/trits/trits.h"
 

@@ -6,7 +6,7 @@
  */
 
 #include <string.h>
-
+#include <stdio.h>
 #include "common/trinary/trit_tryte.h"
 
 static const trit_t TRYTES_TRITS_LUT[TRYTE_SPACE_SIZE][NUMBER_OF_TRITS_IN_A_TRYTE] = {
@@ -51,7 +51,7 @@ uint8_t set_trit_at(tryte_t *const trytes, size_t const length, size_t const ind
 
 void trits_to_trytes(trit_t const *const trits, tryte_t *const trytes, size_t const length) {
   int k = 0;
-
+  //printf("tri to try");
   for (size_t i = 0, j = 0; i < length; i += RADIX, j++) {
     k = 0;
     for (size_t l = length - i < NUMBER_OF_TRITS_IN_A_TRYTE ? length - i : NUMBER_OF_TRITS_IN_A_TRYTE; l-- > 0;) {

@@ -91,6 +91,6 @@ int main(int ac, char **av) {
 
   // Cleanup
   { bundle_transactions_free(&bundle); }
-
+  fprintf(stderr, "Success!\n");
   return EXIT_SUCCESS;
 }
