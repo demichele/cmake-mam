@@ -200,8 +200,8 @@ target_link_libraries(libmam-examples PUBLIC
   common
   libmam-api
 )
-add_executable(commonC examples/common.c)
-target_link_libraries(commonC PUBLIC
+add_executable(recv examples/recv.c)
+target_link_libraries(recv PUBLIC
   libmam-examples
   common
   cclient
