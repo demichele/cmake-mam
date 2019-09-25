@@ -308,6 +308,8 @@ install(DIRECTORY "${PROJECT_SOURCE_DIR}/libmam/" DESTINATION
 
 
 add_executable(send-msg examples/send-msg.c)
+add_executable(recv examples/recv.c)
+
 #target_include_directories(send-msg PUBLIC
 #"${CMAKE_INSTALL_PREFIX}/lib"
 #"${CMAKE_INSTALL_PREFIX}/include/entangled/common"
@@ -323,6 +325,14 @@ add_executable(send-msg examples/send-msg.c)
 
 
 target_link_libraries(send-msg PUBLIC
+  #common
+  libcommon
+  #cclient
+  libmam
+)
+
+
+target_link_libraries(recv PUBLIC
   #common
   libcommon
   #cclient
